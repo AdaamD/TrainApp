@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/background_creme">
 
     <TextView
         android:id="@+id/Titre"
@@ -11,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Horaires de train"
         android:textSize="24sp"
+        android:textColor="@color/Grey"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"/>
 
@@ -19,7 +21,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ville de départ"
+        android:textColorHint="@color/Choco"
         android:inputType="text"
+        android:textColor="@color/Grey"
         android:layout_below="@id/Titre"
         android:layout_marginBottom="16dp"
         android:maxLines="1" />
@@ -29,7 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ville d'arrivée"
+        android:textColorHint="@color/Choco"
         android:inputType="text"
+        android:textColor="@color/Grey"
         android:layout_below="@id/TextDepart"
         android:layout_marginBottom="16dp"
         android:maxLines="1" />
@@ -41,7 +47,7 @@
         android:layout_height="wrap_content"
         android:text="Rechercher"
         android:layout_below="@id/TextArrivee"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/Choco"
         android:textColor="#FFFFFF" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -50,5 +56,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonRechercher"
         android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewHoraires"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/Choco"
+        android:text="Réinitialiser la recherche" />
+
 
 </RelativeLayout>

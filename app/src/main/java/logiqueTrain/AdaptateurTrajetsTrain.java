@@ -27,17 +27,18 @@ public class AdaptateurTrajetsTrain extends RecyclerView.Adapter<AdaptateurTraje
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item_trajet_train, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_trajet_train, parent, false); //  définit l'apparence de chaque élément de la liste via le layout item_trajet_train.xml
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         TrajetTrain trajet = trajets.get(position);
-        holder.textViewDepart.setText(trajet.getVilleDepart());
-        holder.textViewArrivee.setText(trajet.getVilleArrivee());
-        holder.textViewHeureDepart.setText(trajet.getHeureDepart());
-        holder.textViewHeureArrivee.setText(trajet.getHeureArrivee());
+        holder.textViewDepart.setText("Départ de : " + trajet.getVilleDepart());
+        holder.textViewArrivee.setText("Arrivée à : " + trajet.getVilleArrivee());
+        holder.textViewHeureDepart.setText("Départ prévu à : " + trajet.getHeureDepart());
+        holder.textViewHeureArrivee.setText("Arrivée estimée à : " + trajet.getHeureArrivee());
+
     }
 
     @Override

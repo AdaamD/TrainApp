@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/TextDepart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ville de départ"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextArrivee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ville d'arrivée"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/HeureDepart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heure de départ"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/HeureArrivee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heure d'arrivée"
+        android:textSize="14sp" />
+
+
+
+</LinearLayout>
